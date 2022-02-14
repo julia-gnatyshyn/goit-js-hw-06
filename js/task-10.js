@@ -25,7 +25,6 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     boxes.append(box);
   }
-  btnCreate.addEventListener('click', onAmountValue);
 }
 
 function destroyBoxes() {
