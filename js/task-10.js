@@ -23,14 +23,11 @@ function createBoxes(amount) {
     box.style.width = `${size + i * step}px`;
     box.style.height = `${size + i * step}px`;
     box.style.backgroundColor = getRandomHexColor();
-
     boxes.append(box);
   }
-  btnCreate.removeEventListener('click', onAmountValue);
 }
 
 function destroyBoxes() {
   boxes.innerHTML = '';
   input.value = '';
-  btnCreate.addEventListener('click', onAmountValue);
 }

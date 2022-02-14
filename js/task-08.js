@@ -11,7 +11,9 @@ function handleSubmit(event) {
 
   if (email.value === '' || password.value === '') {
     alert('Please fill the requried fields');
+  } else {
+    const formData = { Email: email.value, Password: password.value };
+    console.log(formData);
   }
-  console.log('Email:', email.value, 'Password:', password.value);
   event.currentTarget.reset();
 }

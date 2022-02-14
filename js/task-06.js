@@ -5,7 +5,7 @@ formInput.addEventListener('blur', onCheckInputLength);
 
 function onCheckInputLength(event) {
   formInput.classList.add('invalid');
-  if (event.currentTarget.value.length >= inputLength.dataset.length) {
+  if (event.currentTarget.value.length === Number(inputLength.dataset.length)) {
     formInput.classList.replace('invalid', 'valid');
   }
 }
