@@ -9,11 +9,19 @@ function handleSubmit(event) {
     elements: { email, password },
   } = event.currentTarget;
 
+  // if (email.value === '' || password.value === '') {
+  //   alert('Please fill the requried fields');
+  // } else {
+  //   const formData = { Email: email.value, Password: password.value };
+  //   console.log(formData);
+  // }
+
   if (email.value === '' || password.value === '') {
     alert('Please fill the requried fields');
-  } else {
-    const formData = { Email: email.value, Password: password.value };
-    console.log(formData);
+    return;
   }
+  const formData = { Email: email.value, Password: password.value };
+  console.log(formData);
+
   event.currentTarget.reset();
 }
